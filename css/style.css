@@ -1,0 +1,205 @@
+/*
+File: style.css
+GUI Assignment: Creating Your First Web Page
+Sebastian Gyger, UMass Lowell Computer Science, sebastian_gyger@student.uml.edu
+Copyright (c) 2024 by Gyger. All rights reserved. Last updated Sep 11th 2024.
+This page serves as stylesheet for the website..
+*/
+
+/* The background color of the website! */
+
+body {
+    background-color: aliceblue;
+    color: black;
+}
+
+/* Defines the styles for much of the text found on this website, mostly just different font sizes. */
+h1 {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h2 {
+    font-size: 36px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h3 {
+    font-size: 26px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+h4 {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-left:10%; 
+    margin-right:10%;
+}
+
+
+/* Formats the itinerary table found on the home page, different styles for
+the header cells vs the rest. The whole table has borders for every call and itself. */
+
+.itinerary-table {
+    border-style: solid;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left:5%; 
+    margin-right:5%;
+}
+
+.itinerary-head {
+    border: solid;
+    padding: 20px;
+    background-color: lightgray;
+    color: black;
+}
+
+.itinerary-head th {
+    font-size: 24px;
+}
+
+.itinerary-timeday {
+    border: solid;
+    padding: 20px;
+    width: 50px;
+}
+
+.itinerary {
+    border: solid;
+    padding: 20px;
+    font-size: 18px;
+}
+
+/* This code serves to help display the pictures found on the day and restaurants pages.
+There are two options, one to display two images side by side, and another to display one single
+image, centered. The borders turn dark when you hover over a image and a description is displayed
+under every image. Throughout this website margin auto will be used to center images. */
+  
+div.gallery {
+    border: 1px solid #ccc;
+    width: 40%;
+    margin-bottom: 1%;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.sidebyside {
+    display:inline-block;
+    margin-left: 4.8%;
+    margin-right: 4.8%;
+}
+
+div.centergallery {
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* This code stylizes the footers found on all days and creates a table where the entire
+cell is clickable to pick an option and turns gray when hovered over (except for inactive links,
+these will not turn gray to indicate that they are not clickable). 
+Border radii are used to create curved cells. Inline block lets me put both on the same line. */
+
+#dayfoot {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    font-size: 24px;
+}
+
+#dayfoot a {
+    margin:-4px;
+    display:block;
+    padding:4px 10px;
+}
+
+#dayfoot a:hover {
+    background-color: gray;
+    margin:-4px;
+    padding:4px 10px;
+    border-radius:11px;
+    color: black;
+}
+
+#dayfoot td {
+    margin:-4px;
+    border:solid;
+    border-radius:11px;
+    border-color: gray;
+}
+
+#dayfoot .left {
+    width:30%;
+    text-align: left;
+}
+
+#dayfoot .right {
+    width:30%;
+    text-align: right;
+}
+
+#dayfoot .middle {
+    width:30%;
+    text-align: center;
+}
+
+/* Essentially a truncated version of the day footers, only having the home option. */
+#restaurantfoot {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    border:solid;
+    border-radius:11px;
+    border-color: gray;
+}
+
+#restaurantfoot a {
+    margin:-4px;
+    display:block;
+    padding:4px 10px;
+}
+
+#restaurantfoot a:hover {
+    background-color: gray;
+    margin:-4px;
+    padding:4px 10px;
+    border-radius:11px;
+    color: black;
+}
+
+/* Currently only used on the home page to show that the maps and information were taken from Google Maps. */
+#source {
+    margin-left: 60%;
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Shows the website was made by me! */
+#footer {
+    font-size: 12px;
+    font-family:'Times New Roman', Times, serif;
+    margin-left:90%;
+}
